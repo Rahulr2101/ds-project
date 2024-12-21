@@ -448,7 +448,10 @@ numeric_cols = df.select_dtypes(include=[np.number]).columns
 numeric_cols
 plt.figure(figsize=(12, 8))
 for i, col in enumerate(numeric_cols, 1):
-    plt.subplot(3, 4, i)  # 3 rows, 4 columns of subplots
+    plt.subplot(3, 4, i)  # 3 rows, 4 columns of sub
+    
+    
+    plots
     sns.boxplot(data=df, x=col)
     plt.title(f"Box plot of {col}")
     plt.xticks(rotation=45)
